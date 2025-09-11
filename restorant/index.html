@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="upper-nav">
+                    <div id="dropDownList1" class="links-upper-nav-dropdown">
+                        <a href="#">Category</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList2" class="links-upper-nav-dropdown">
+                        <a href="#">Products</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList3" class="links-upper-nav-dropdown">
+                        <a href="#">Pages</a>
+                        <a href="./assets/pages/shop.html">Shop</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList4" class="links-upper-nav-dropdown">
+                        <a href="./assets/pages/blog.html">Blog</a>
+                        <a href="./assets/pages/aboutus.html">About us</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList5" class="links-upper-nav-dropdown">
+                        <a href="#">Elements</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div class="category-nav">
+                        <img src="./assets/img/category.png" alt="" />
+                    </div>
+                    <div class="links-upper-nav">
+                        <div class="home">
+                            <a href="/index.html">Home</a>
+                        </div>
+                        <div class="category">
+                            <p>Category</p>
+                            <i id="dropDown1" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="products">
+                            <p>Products</p>
+                            <i id="dropDown2" class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+                        <div class="pages">
+                            <p>Pages</p>
+                            <i id="dropDown3" class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+                        <div class="blog">
+                            <p>Blog</p>
+                            <i id="dropDown4" class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+                        <div class="elements">
+                            <p>Elements</p>
+                            <i id="dropDown5" class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                    <div class="number-nav">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+994 77 609 91 85</p>
+                    </div>
+                </div>
+                <hr style="height: 1px; width: 100%; color: #777; margin-top: 10px;">
+                <div class="footer-nav">
+                    <div class="brand-img">
+                        <img src="./assets/img/brand-img.png" alt="" />
+                    </div>
+                    <div id="dropDownList6" class="input-footer-nav-dropdown">
+                        <p>All Categories</p>
+                        <p>Here will something</p>
+                        <p>Here will something</p>
+                    </div>
+                    <div class="input-nav">
+                        <div class="input-btn-nav">
+                            <input id="searchInput" type="search" placeholder="Search For items..." />
+                            <button>
+                                All Categories
+                                <i id="dropDown6" class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <button id="searchBtn" class="input-nav-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="links-footer-nav">
+                        <div class="account">
+                            <i class="fa-regular fa-user"></i>
+                            <a href="./assets/pages/registion.html">Account</a>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                            <a href="#">Wish list</a>
+                        </div>
+                        <div class="cart">
+                            <img src="./assets/img/cart.png" alt="" />
+                            <a href="./assets/pages/cart.html">Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-img">
+                <img src="./assets/img/mainimg.png" alt="" />
+            </div>
+        </header>
+        <main class="main">
+            <div class="customer-fav">
+                <div class="txt-customer-fav">
+                    <h4>Customer Favorites</h4>
+                    <h1>Popular Catagories</h1>
+                </div>
+                <div class="cards-customer-fav" id="cardsCustomerFav"></div>
+            </div>
+            <div class="daily-sells">
+                <div class="daily-sells-nav">
+                    <div class="txt-daily-sells-nav">
+                        <h1>Daily Best Sells</h1>
+                    </div>
+                    <div class="changer-daily-sells-nav">
+                        <p id="changerDailyTxt1">Featured</p>
+                        <p id="changerDailyTxt2">Popular</p>
+                        <p id="changerDailyTxt3">New added</p>
+                    </div>
+                </div>
+                <i id="arrowLeftDailySells" class="fa-solid fa-arrow-left"></i>
+                <i id="arrowRightDailySells" class="fa-solid fa-arrow-right"></i>
+                <div class="daily-sells-cards">
+                    <img src="./assets/img/daily-seller-img.png" alt="" />
+                    <section id="featuredSectionDailyCards" class="daily-cards">
+                        <div id="featuredSectionCard1" class="daily-card">
+                            <p class="daily-card-seller1"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="featuredCardsBtn1">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div id="featuredSectionCard2" class="daily-card">
+                            <p class="daily-card-seller2"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="featuredCardsBtn2">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div id="featuredSectionCard3" class="daily-card">
+                            <p class="daily-card-seller3"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="featuredCardsBtn3">Add To Cart</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section style="display: none;" id="popularSectionDailyCards" class="daily-cards">
+                        <div id="popularSectionCart1" class="daily-card">
+                            <p class="daily-card-seller1"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="popularCardsBtn1">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div id="popularSectionCart2" class="daily-card">
+                            <p class="daily-card-seller2"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="popularCardsBtn2">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div id="popularSectionCart3" class="daily-card">
+                            <p class="daily-card-seller3"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="popularCardsBtn3">Add To Cart</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section style="display: none;" id="newAddedSectionDailyCards" class="daily-cards">
+                        <div id="newAddedSectionCart1" class="daily-card">
+                            <p class="daily-card-seller1"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="newAddedCardsBtn1">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div id="newAddedSectionCart2" class="daily-card">
+                            <p class="daily-card-seller2"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="newAddedCardsBtn2">Add To Cart</button>
+                            </div>
+                        </div>
+                        <div id="newAddedSectionCart3" class="daily-card">
+                            <p class="daily-card-seller3"></p>
+                            <img src="" alt="" />
+                            <div class="txt-daily-card">
+                                <p>Hodo Foods</p>
+                                <h3></h3>
+                                <i class="fa-solid fa-star"></i>
+                                <div class="daily-card-price">
+                                    <p>$238.85</p>
+                                    <p>$245.8</p>
+                                </div>
+                                <div class="daily-card-line">
+                                    <div></div>
+                                </div>
+                                <p style="font-size: 14px;">Sold: 90/120</p>
+                                <button id="newAddedCardsBtn3">Add To Cart</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="special-dishes">
+                <div>
+                    <h3 style="color: red;">Special Dishes</h3>
+                </div>
+                <div class="upper-special-dishes">
+                    <div class="txt-upper-special-dishes">
+                        <h1>Standout Dishes From Our Menu</h1>
+                    </div>
+                    <div class="arrows-upper-special-dishes">
+                        <div class="arrows-left-upper-special-dishes">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="arrows-right-upper-special-dishes">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-dishes-cards"></div>
+            </div>
+            <div class="deals-day">
+                <div class="upper-deals-day">
+                    <h1>Deals Of The Day</h1>
+                    <div>
+                        <a href="#">All Deals</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="deals-day-cards"></div>
+            </div>
+            <div class="people-choose">
+                <div class="left-people-choose">
+                    <img src="./assets/img/people-choose.png" alt="">
+                </div>
+                <div class="right-people-choose">
+                    <h1>Why People Choose us?</h1>
+                    <div class="right-people-choose-cards">
+                        <div class="right-people-choose-cards-img">
+                            <img src="./assets/img/people-choose-img1.png" alt="">
+                        </div>
+                        <div>
+                            <h3>Convenient and Reliable</h3>
+                            <p>Whether you dine in, take out, or order delivery, our service is convenient, fast, and
+                                reliable, making mealtime hassle-free.</p>
+                        </div>
+                    </div>
+                    <div class="right-people-choose-cards">
+                        <div class="right-people-choose-cards-img">
+                            <img src="./assets/img/people-choose-img2.png" alt="">
+                        </div>
+                        <div>
+                            <h3>Variety of Options</h3>
+                            <p>From hearty meals to light snacks, we offer a wide range of options to suit every taste
+                                and craving.</p>
+                        </div>
+                    </div>
+                    <div class="right-people-choose-cards">
+                        <div class="right-people-choose-cards-img">
+                            <img src="./assets/img/people-choose-img3.png" alt="">
+                        </div>
+                        <div>
+                            <h3>Eat Burger</h3>
+                            <p>Our burgers are grilled to perfection, with juicy patties and flavorful toppings that
+                                make every bite a delicious experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="email-address">
+                <div class="email-address-txt">
+                    <h1>Stay home & get your daily
+                        needs from our shop</h1>
+                    <h4>Start You'r Daily Shopping with <span>Nest Mart</span></h4>
+                </div>
+                <div class="email-address-input">
+                    <i onclick="saveData()" class="fa-regular fa-paper-plane"></i>
+                    <input type="email" placeholder="Your emaill address" id="dataInput">
+                    <button onclick="saveData()">Subscribe</button>
+                </div>
+            </div>
+            <div class="main-footer-cards">
+                <div class="main-footer-card">
+                    <img src="./assets/img/main-footer-cards-img1.png" alt="">
+                    <div>
+                        <h4>Best prices & offers</h4>
+                        <p>Orders 150 or more</p>
+                    </div>
+                </div>
+                <div class="main-footer-card">
+                    <img src="./assets/img/main-footer-cards-img2.png" alt="">
+                    <div>
+                        <h4>Free delivery</h4>
+                        <p>24/7 amazing services</p>
+                    </div>
+                </div>
+                <div class="main-footer-card">
+                    <img src="./assets/img/main-footer-cards-img3.png" alt="">
+                    <div>
+                        <h4>Great daily deal</h4>
+                        <p>When you sign up</p>
+                    </div>
+                </div>
+                <div class="main-footer-card">
+                    <img src="./assets/img/main-footer-cards-img4.png" alt="">
+                    <div>
+                        <h4>Wide assortment</h4>
+                        <p>Mega Discounts</p>
+                    </div>
+                </div>
+                <div class="main-footer-card">
+                    <img src="./assets/img/main-footer-cards-img5.png" alt="">
+                    <div>
+                        <h4>Easy returns</h4>
+                        <p>Within 30 days</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="upper-footer">
+                <div class="contact-footer">
+                    <div>
+                        <img src="./assets/img/brand-img.png" alt="">
+                        <div>
+                            <p>FoodTrove is the biggest market of grocery products. Get your daily needs from our
+                                store.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/img/location.png" alt="">
+                        <p>51 Green St.Huntington ohaio beach ontario, NY
+                            11746 KY 4783, USA.</p>
+                    </div>
+                    <div>
+                        <i style="color: #F53E32;" class="fa-regular fa-envelope"></i>
+                        <p>example@email.com</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/phone.png" alt="">
+                        <p>+91 123 4567890</p>
+                    </div>
+                </div>
+                <div class="company-footer">
+                    <div>
+                        <h3>Company</h3>
+                    </div>
+                    <div>
+                        <a href="./assets/pages/aboutus.html">About Us</a>
+                    </div>
+                    <div>
+                        <a href="./assets/pages/fag.html">Delivery Information</a>
+                    </div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div>
+                        <a href="#">Support Center</a>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <div>
+                        <h3>Category</h3>
+                    </div>
+                    <div>
+                        <a href="#">Dairy & Bakery</a>
+                    </div>
+                    <div>
+                        <a href="#">Fruits & Vegetable</a>
+                    </div>
+                    <div>
+                        <a href="#">Snack & Spice</a>
+                    </div>
+                    <div>
+                        <a href="#">Juice & Drinks</a>
+                    </div>
+                    <div>
+                        <a href="#">Chicken & Meat</a>
+                    </div>
+                    <div>
+                        <a href="#">Fast Food</a>
+                    </div>
+                </div>
+                <div class="subscribe-our-newsletter-footer">
+                    <div>
+                        <h3>Subscribe Our Newsletter</h3>
+                    </div>
+                    <div class="subscribe-our-newsletter-footer-input">
+                        <input type="search" placeholder="Search here...">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="subscribe-our-newsletter-footer-icons">
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div>
+                            <img src="./assets/img/basketball.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/img/subscribe-our-newsletter-footer-img1.png" alt="">
+                        <img src="./assets/img/subscribe-our-newsletter-footer-img2.png" alt="">
+                        <img src="./assets/img/subscribe-our-newsletter-footer-img3.png" alt="">
+                        <img src="./assets/img/subscribe-our-newsletter-footer-img4.png" alt="">
+                        <img src="./assets/img/subscribe-our-newsletter-footer-img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="txt-footer">
+                <p>© 2025 <span>Foodzy</span>, All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

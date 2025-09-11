@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../styles/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="upper-nav">
+                    <div id="dropDownList1" class="links-upper-nav-dropdown">
+                        <a href="#">Category</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList2" class="links-upper-nav-dropdown">
+                        <a href="#">Products</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList3" class="links-upper-nav-dropdown">
+                        <a href="#">Pages</a>
+                        <a href="./shop.html">Shop</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList4" class="links-upper-nav-dropdown">
+                        <a href="./blog.html">Blog</a>
+                        <a href="./aboutus.html">About us</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList5" class="links-upper-nav-dropdown">
+                        <a href="#">Elements</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div class="category-nav">
+                        <img src="../img/category.png" alt="" />
+                    </div>
+                    <div class="links-upper-nav">
+                        <div class="home">
+                            <a href="/index.html">Home</a>
+                        </div>
+                        <div class="category">
+                            <p>Category</p>
+                            <i id="dropDown1" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="products">
+                            <p>Products</p>
+                            <i id="dropDown2" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pages">
+                            <p>Pages</p>
+                            <i id="dropDown3" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="blog">
+                            <p>Blog</p>
+                            <i id="dropDown4" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="elements">
+                            <p>Elements</p>
+                            <i id="dropDown5" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="number-nav">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+994 77 609 91 85</p>
+                    </div>
+                </div>
+                <hr style="height: 1px; width: 100%; color: #777; margin-top: 10px;">
+                <div class="footer-nav">
+                    <div class="brand-img">
+                        <img src="../img/brand-img.png" alt="">
+                    </div>
+                    <div id="dropDownList6" class="input-footer-nav-dropdown">
+                        <p>All Categories</p>
+                        <p>Here will something</p>
+                        <p>Here will something</p>
+                    </div>
+                    <div class="input-nav">
+                        <div class="input-btn-nav">
+                            <input id="searchInput" type="search" placeholder="Search For items..." />
+                            <button>
+                                All Categories
+                                <i id="dropDown6" class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <button id="searchBtn" class="input-nav-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="links-footer-nav">
+                        <div class="account">
+                            <i class="fa-regular fa-user"></i>
+                            <a href="./registion.html">Account</a>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                            <a href="#">Wish list</a>
+                        </div>
+                        <div class="cart">
+                            <img src="../img/cart.png" alt="" />
+                            <a href="./cart.html">Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-div">
+                <h3>Shop</h3>
+                <div class="hero-div-txt">
+                    <a href="/index.html">Home</a>
+                    <p>-</p>
+                    <a href="./shop.html">Shop</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="carts-sidebar">
+                <div class="sidebar" id="sideBar">
+                    <div class="product-category">
+                        <div class="product-category-title">
+                            <h4>Product Category</h4>
+                        </div>
+                        <hr style="margin-bottom: 10px;">
+                        <div class="product-category-txt">
+                            <div>
+                                <input type="checkbox">
+                                <p>Juice & Drinks</p>
+                            </div>
+                            <p>[20]</p>
+                        </div>
+                        <div class="product-category-txt">
+                            <div>
+                                <input type="checkbox">
+                                <p>Dairy & Milk</p>
+                            </div>
+                            <p>[54]</p>
+                        </div>
+                        <div class="product-category-txt">
+                            <div>
+                                <input type="checkbox">
+                                <p>Snack & Spice</p>
+                            </div>
+                            <p>[64]</p>
+                        </div>
+                    </div>
+                    <div class="filter-price">
+                        <div class="filter-price-title">
+                            <h4>Filter By Price</h4>
+                        </div>
+                        <hr>
+                        <div class="filter-price-range">
+                            <div></div>
+                            <input id="rangeInput" type="range" min="0" max="125" value="80" step="25">
+                        </div>
+                        <div class="filter-price-txt">
+                            <p id="rangeInputTxt">Price : <span>$20 - $250</span></p>
+                        </div>
+                        <button>Filter</button>
+                    </div>
+                    <div class="product-category">
+                        <div class="product-category-title">
+                            <h4>Product Category</h4>
+                        </div>
+                        <hr>
+                        <div class="product-category-txt">
+                            <div>
+                                <input type="checkbox">
+                                <p>Blue</p>
+                            </div>
+                            <div style="margin-left: 90px; background-color: #6C9EFF;"></div>
+                        </div>
+                        <div class="product-category-txt">
+                            <div>
+                                <input type="checkbox">
+                                <p>Yellow</p>
+                            </div>
+                            <div style="margin-left: 76px; background-color: #DEDE44;"></div>
+                        </div>
+                        <div class="product-category-txt">
+                            <div>
+                                <input type="checkbox">
+                                <p>Red</p>
+                            </div>
+                            <div style="margin-left: 91px; background-color: #FB5555;"></div>
+                        </div>
+                    </div>
+                    <div class="product-weight">
+                        <div class="product-weight-title">
+                            <h4>Weight</h4>
+                        </div>
+                        <hr>
+                        <div class="product-weight-txt">
+                            <input type="checkbox">
+                            <p>2kg Pack</p>
+                        </div>
+                        <div class="product-weight-txt">
+                            <input type="checkbox">
+                            <p>20kg Pack</p>
+                        </div>
+                        <div class="product-weight-txt">
+                            <input type="checkbox">
+                            <p>30kg pack</p>
+                        </div>
+                    </div>
+                    <div class="products-tages">
+                        <div class="products-tages-title">
+                            <h4>Products Tages</h4>
+                        </div>
+                        <hr>
+                        <div class="products-tages-buttons">
+                            <button style="width: 116.55px;">Vegetables</button>
+                            <button style="width: 71.41px;">juice</button>
+                        </div>
+                        <div class="products-tages-buttons">
+                            <button style="width: 68.38px;">Food</button>
+                            <button style="width: 100.64px;">Dry Fruits</button>
+                        </div>
+                        <div class="products-tages-buttons">
+                            <button style="width: 116.55px;">Vegetables</button>
+                            <button style="width: 71.41px;">juice</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="top-right-side">
+                        <div class="top-right-side-buttons">
+                            <button id="topRightSideFilter"><img src="../img/filter.png" alt=""></button>
+                            <button style="background-color: #F53E32;"><i class="material-icons">&#xe3ec;</i></button>
+                            <button><img src="../img/menu-img.png" alt=""></button>
+                        </div>
+                        <div class="top-right-side-txt">
+                            <p>We found 29 items for you!</p>
+                        </div>
+                        <div class="drop-down-button">
+                            <button id="dropDownButtonRightSide">
+                                <p>Sort By :</p>
+                                <p>Featured</p>
+                                <i class="fa-solid fa-chevron-down" id="dropDownRightSide"></i>
+                            </button>
+                            <div id="dropTxtRightSide">
+                                <p>Hello World</p>
+                                <p>Hello World</p>
+                                <p>Hello World</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side-cards-first-list"></div>
+                    <div style="display: none;" class="right-side-cards-second-list"></div>
+                    <div style="display: none;" class="right-side-cards-third-list"></div>
+                    <div class="lister">
+                        <button>Previous</button>
+                        <button id="listerBtn1" style="background-color: #F53E32; color: white;">1</button>
+                        <button id="listerBtn2">2</button>
+                        <button id="listerBtn3">3</button>
+                        <button id="listerBtnNext" style="border-radius: 0 5px 5px 0;">Next</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="upper-footer">
+                <div class="contact-footer">
+                    <div>
+                        <img src="../img/brand-img.png" alt="">
+                        <div>
+                            <p>FoodTrove is the biggest market of grocery products. Get your daily needs from our
+                                store.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../img/location.png" alt="">
+                        <p>51 Green St.Huntington ohaio beach ontario, NY
+                            11746 KY 4783, USA.</p>
+                    </div>
+                    <div>
+                        <i style="color: #F53E32;" class="fa-regular fa-envelope"></i>
+                        <p>example@email.com</p>
+                    </div>
+                    <div>
+                        <img src="../img/phone.png" alt="">
+                        <p>+91 123 4567890</p>
+                    </div>
+                </div>
+                <div class="company-footer">
+                    <div>
+                        <h3>Company</h3>
+                    </div>
+                    <div>
+                        <a href="./aboutus.html">About Us</a>
+                    </div>
+                    <div>
+                        <a href="./fag.html">Delivery Information</a>
+                    </div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div>
+                        <a href="#">Support Center</a>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <div>
+                        <h3>Category</h3>
+                    </div>
+                    <div>
+                        <a href="#">Dairy & Bakery</a>
+                    </div>
+                    <div>
+                        <a href="#">Fruits & Vegetable</a>
+                    </div>
+                    <div>
+                        <a href="#">Snack & Spice</a>
+                    </div>
+                    <div>
+                        <a href="#">Juice & Drinks</a>
+                    </div>
+                    <div>
+                        <a href="#">Chicken & Meat</a>
+                    </div>
+                    <div>
+                        <a href="#">Fast Food</a>
+                    </div>
+                </div>
+                <div class="subscribe-our-newsletter-footer">
+                    <div>
+                        <h3>Subscribe Our Newsletter</h3>
+                    </div>
+                    <div class="subscribe-our-newsletter-footer-input">
+                        <input type="search" placeholder="Search here...">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="subscribe-our-newsletter-footer-icons">
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div>
+                            <img src="../img/basketball.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../img/subscribe-our-newsletter-footer-img1.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img2.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img3.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img4.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="txt-footer">
+                <p>© 2025 <span>Foodzy</span>, All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="upper-nav">
+                    <div id="dropDownList1" class="links-upper-nav-dropdown">
+                        <a href="#">Category</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList2" class="links-upper-nav-dropdown">
+                        <a href="#">Products</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList3" class="links-upper-nav-dropdown">
+                        <a href="#">Pages</a>
+                        <a href="./shop.html">Shop</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList4" class="links-upper-nav-dropdown">
+                        <a href="./blog.html">Blog</a>
+                        <a href="./aboutus.html">About us</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div id="dropDownList5" class="links-upper-nav-dropdown">
+                        <a href="#">Elements</a>
+                        <a href="#">Here will something</a>
+                        <a href="#">Here will something</a>
+                    </div>
+                    <div class="category-nav">
+                        <img src="../img/category.png" alt="" />
+                    </div>
+                    <div class="links-upper-nav">
+                        <div class="home">
+                            <a href="/index.html">Home</a>
+                        </div>
+                        <div class="category">
+                            <p>Category</p>
+                            <i id="dropDown1" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="products">
+                            <p>Products</p>
+                            <i id="dropDown2" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pages">
+                            <p>Pages</p>
+                            <i id="dropDown3" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="blog">
+                            <p>Blog</p>
+                            <i id="dropDown4" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="elements">
+                            <p>Elements</p>
+                            <i id="dropDown5" class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="number-nav">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+994 77 609 91 85</p>
+                    </div>
+                </div>
+                <hr style="height: 1px; width: 100%; color: #777; margin-top: 10px;">
+                <div class="footer-nav">
+                    <div class="brand-img">
+                        <img src="../img/brand-img.png" alt="">
+                    </div>
+                    <div id="dropDownList6" class="input-footer-nav-dropdown">
+                        <p>All Categories</p>
+                        <p>Here will something</p>
+                        <p>Here will something</p>
+                    </div>
+                    <div class="input-nav">
+                        <div class="input-btn-nav">
+                            <input id="searchInput" type="search" placeholder="Search For items..." />
+                            <button>
+                                All Categories
+                                <i id="dropDown6" class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <button id="searchBtn" class="input-nav-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="links-footer-nav">
+                        <div class="account">
+                            <i class="fa-regular fa-user"></i>
+                            <a href="./registion.html">Account</a>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                            <a href="#">Wish list</a>
+                        </div>
+                        <div class="cart">
+                            <img src="../img/cart.png" alt="" />
+                            <a href="./cart.html">Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-div">
+                <h3>Checkout</h3>
+                <div class="hero-div-txt">
+                    <a href="/index.html">Home</a>
+                    <p>-</p>
+                    <a href="./checkout.html">Checkout</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="cart-checkout">
+                <div class="left-section">
+                    <div class="left-section-cost">
+                        <div class="summary">
+                            <div class="summary-title">
+                                <h3>Summary</h3>
+                            </div>
+                            <div class="summary-txt">
+                                <p>Sub-Total</p>
+                                <p id="cost1"></p>
+                            </div>
+                            <div class="summary-txt">
+                                <p>Delivery Charges</p>
+                                <p id="cost2"></p>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="total-amount">
+                            <div class="total-amount-title">
+                                <h4>Total Amount</h4>
+                                <h4 id="cost3"></h4>
+                            </div>
+                            <div class="total-amount-carts"></div>
+                        </div>
+                    </div>
+                    <div class="left-section-delivery-method">
+                        <div class="left-section-delivery-method-title">
+                            <h3>Delivery Method</h3>
+                        </div>
+                        <div class="left-section-delivery-method-txt">
+                            <p>Please select the preferred shipping method to use on this
+                                order.</p>
+                        </div>
+                        <div class="left-section-delivery-method-rate">
+                            <div>
+                                <p>Free Shipping</p>
+                                <div>
+                                    <input type="radio" name="rate" checked id="rateFree">
+                                    <p>Rate - $0 .00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Flat Rate</p>
+                                <div>
+                                    <input type="radio" name="rate" id="rateMoney">
+                                    <p>Rate - $5.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-section-delivery-method-comment">
+                            <p>Add Comments About Your Order</p>
+                            <div>
+                                <textarea id="commentInput"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-section-payment-method">
+                        <div class="left-section-payment-method-title">
+                            <h3>Payment Method</h3>
+                        </div>
+                        <div class="left-section-payment-method-txt">
+                            <p>Please select the preferred payment method to use on this
+                                order.</p>
+                        </div>
+                        <div class="left-section-payment-method-variants">
+                            <div>
+                                <input type="radio" name="pay-method" checked>
+                                <p>Cash On Delivery</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="pay-method">
+                                <p>UPI</p>
+                            </div>
+                            <div>
+                                <input type="radio" name="pay-method">
+                                <p>Bank Transfer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-section-payment-imgs">
+                        <div class="left-section-payment-imgs-txt">
+                            <h4>Payment Method</h4>
+                        </div>
+                        <div class="left-section-payment-imgs-img">
+                            <img src="../img/payment.png.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="right-section-new-customer">
+                        <div class="right-section-new-customer-title">
+                            <h3>New Customer</h3>
+                        </div>
+                        <div class="right-section-new-customer-accounts">
+                            <div>
+                                <p>Checkout Options</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" name="accounts" id="accountsRegisterRadio" checked>
+                                    <p>Register Account</p>
+                                </div>
+                                <div>
+                                    <input type="radio" name="accounts" id="accountsGuestRadio">
+                                    <p>Guest Account</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-section-new-customer-txt">
+                            <p>By creating an account you will be able to shop faster, be up to date on an order's
+                                status, and keep track of the orders you have previously made.</p>
+                        </div>
+                        <button id="accountLookerBtn">Continue</button>
+                        <div class="registting">
+                            <div class="registting-title">
+                                <h2>Returning Customer</h2>
+                            </div>
+                            <div class="registting-inputs">
+                                <div>
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="Enter your email address" id="emailInput">
+                                </div>
+                                <div>
+                                    <label>Password</label>
+                                    <input type="password" placeholder="Enter your password" id="passwordInput">
+                                </div>
+                            </div>
+                            <div class="registting-btn">
+                                <button id="loginBtn">Login</button>
+                                <a href="./registion.html">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-section-billing-details">
+                        <div class="right-section-billing-details-title">
+                            <h3>Billing Details</h3>
+                        </div>
+                        <div class="right-section-billing-details-options">
+                            <div>
+                                <p>Checkout Options</p>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" name="options" id="existingAddress">
+                                    <p>I want to use an existing address</p>
+                                </div>
+                                <div>
+                                    <input type="radio" name="options" id="newAddress" checked>
+                                    <p>I want to use new address</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-section-billing-details-inputs">
+                            <div style="gap: 30px;">
+                                <div>
+                                    <label>First Name</label>
+                                    <input type="search" placeholder="Enter your first name">
+                                </div>
+                                <div>
+                                    <label>Last Name</label>
+                                    <input type="search" placeholder="Enter your last name">
+                                </div>
+                            </div>
+                            <div class="address-input">
+                                <label>Address</label>
+                                <input type="search" placeholder="Address Line 1">
+                            </div>
+                            <div style="gap: 30px;">
+                                <div>
+                                    <label>City</label>
+                                    <input type="text" placeholder="City" id="cityInput">
+                                    <i id="cityDropDown" class="fa-solid fa-chevron-down"></i>
+                                    <div id="cityDrop"></div>
+                                </div>
+                                <div>
+                                    <label>Post Code</label>
+                                    <input type="password" placeholder="Post Code" id="passwordInput2">
+                                    <i id="passwordDropDown" class="fa-solid fa-chevron-down"></i>
+                                    <div id="passwordDrop"></div>
+                                </div>
+                            </div>
+                            <div style="gap: 30px;">
+                                <div>
+                                    <label>Country</label>
+                                    <input type="text" placeholder="Country" id="countryInput">
+                                    <i id="countryDropDown" class="fa-solid fa-chevron-down"></i>
+                                    <div id="countryDrop"></div>
+                                </div>
+                                <div>
+                                    <label>Region State</label>
+                                    <input type="text" placeholder="Region/State" id="regionInput">
+                                    <i id="regionDropDown" class="fa-solid fa-chevron-down"></i>
+                                    <div id="regionDrop"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-order">
+                        <button id="placeOrderBtn">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="upper-footer">
+                <div class="contact-footer">
+                    <div>
+                        <img src="../img/brand-img.png" alt="">
+                        <div>
+                            <p>FoodTrove is the biggest market of grocery products. Get your daily needs from our
+                                store.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../img/location.png" alt="">
+                        <p>51 Green St.Huntington ohaio beach ontario, NY
+                            11746 KY 4783, USA.</p>
+                    </div>
+                    <div>
+                        <i style="color: #F53E32;" class="fa-regular fa-envelope"></i>
+                        <p>example@email.com</p>
+                    </div>
+                    <div>
+                        <img src="../img/phone.png" alt="">
+                        <p>+91 123 4567890</p>
+                    </div>
+                </div>
+                <div class="company-footer">
+                    <div>
+                        <h3>Company</h3>
+                    </div>
+                    <div>
+                        <a href="./aboutus.html">About Us</a>
+                    </div>
+                    <div>
+                        <a href="./fag.html">Delivery Information</a>
+                    </div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="#">Terms & Conditions</a>
+                    </div>
+                    <div>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div>
+                        <a href="#">Support Center</a>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <div>
+                        <h3>Category</h3>
+                    </div>
+                    <div>
+                        <a href="#">Dairy & Bakery</a>
+                    </div>
+                    <div>
+                        <a href="#">Fruits & Vegetable</a>
+                    </div>
+                    <div>
+                        <a href="#">Snack & Spice</a>
+                    </div>
+                    <div>
+                        <a href="#">Juice & Drinks</a>
+                    </div>
+                    <div>
+                        <a href="#">Chicken & Meat</a>
+                    </div>
+                    <div>
+                        <a href="#">Fast Food</a>
+                    </div>
+                </div>
+                <div class="subscribe-our-newsletter-footer">
+                    <div>
+                        <h3>Subscribe Our Newsletter</h3>
+                    </div>
+                    <div class="subscribe-our-newsletter-footer-input">
+                        <input type="search" placeholder="Search here...">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="subscribe-our-newsletter-footer-icons">
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                        <div>
+                            <img src="../img/basketball.png" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../img/subscribe-our-newsletter-footer-img1.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img2.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img3.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img4.png" alt="">
+                        <img src="../img/subscribe-our-newsletter-footer-img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="txt-footer">
+                <p>© 2025 <span>Foodzy</span>, All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/checkout.js"></script>
+</body>
+
+</html>
