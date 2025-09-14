@@ -1,1 +1,2 @@
-# restorant-finnal-project
+# restorant-git
+# project starting from index.html
