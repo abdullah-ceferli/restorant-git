@@ -255,7 +255,6 @@ function dropDownFunction() {
         }
     })
 }
-
 dropDownFunction()
 
 function listerBtnFunction() {
@@ -344,7 +343,6 @@ function listerBtnFunction() {
         }
     })
 }
-
 listerBtnFunction()
 
 
