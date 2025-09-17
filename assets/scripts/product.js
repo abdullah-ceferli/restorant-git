@@ -8,10 +8,31 @@ fetch("../api/data.json")
         let ShopCardsJsonData3 = Object.values(data[`all_Products_Third_List`][0])
         const productSidebar = document.getElementsByClassName("product-sidebar")[0]
 
-        
+        function idDocuments() {
+            const weightBtn1 = document.getElementById("weightBtn1")
+            const weightBtn2 = document.getElementById("weightBtn2")
+            const weightBtn3 = document.getElementById("weightBtn3")
+            const weightBtn4 = document.getElementById("weightBtn4")
+            const costTxt = document.getElementById("costTxt")
+            const oldCostTxt = document.getElementById("oldCostTxt")
+            const quantityPlus = document.getElementById("quantityPlus")
+            const quantityMinus = document.getElementById("quantityMinus")
+            const quantity = document.getElementById("quantity")
+            const productIteam = document.getElementById("productIteam")
+            const productDescriptionInfRev = document.getElementById("productDescriptionInfRev")
+            const productDescription = document.getElementById("productDescription")
+            const productInf = document.getElementById("productInf")
+            const productRev = document.getElementById("productRev")
+        }
+
+        // 1
         if (savedGlobalCartCount >= productCardsCount[0].start && savedGlobalCartCount <= productCardsCount[0].end) {
+            idDocuments()
             let indexInList = savedGlobalCartCount - productCardsCount[0].start
             let cardDiv = document.createElement('div')
+            let count = 1
+            let weightCount = 1
+            let process = ShopCardsJsonData1[indexInList].cost
             cardDiv.innerHTML = `
                 <div class="product">
                         <div class="product-top">
@@ -82,10 +103,10 @@ fetch("../api/data.json")
                                 </div>
                                 <div class="product-about-right-weight">
                                     <h3>Size/Weight :</h3>
-                                    <button id="weightBtn1">50kg</button>
-                                    <button id="weightBtn2">80kg</button>
-                                    <button id="weightBtn3">120kg</button>
-                                    <button id="weightBtn4">200kg</button>
+                                    <button id="weightBtn1">${ShopCardsJsonData1[indexInList].product_Weight.weight1}kg</button>
+                                    <button id="weightBtn2">${ShopCardsJsonData1[indexInList].product_Weight.weight2}kg</button>
+                                    <button id="weightBtn3">${ShopCardsJsonData1[indexInList].product_Weight.weight3}kg</button>
+                                    <button id="weightBtn4">${ShopCardsJsonData1[indexInList].product_Weight.weight4}kg</button>
                                 </div>
                                 <div class="product-about-right-quantity">
                                     <div class="product-about-right-quantity-adder">
@@ -108,21 +129,13 @@ fetch("../api/data.json")
                         <div class="product-footer">
                             <div class="product-footer-top">
                                 <div class="product-footer-top-title">
-                                    <h3>Description</h3>
-                                    <h3>Information</h3>
-                                    <h3>Review</h3>
+                                    <h3 id="productDescription">Description</h3>
+                                    <h3 id="productInf">Information</h3>
+                                    <h3 id="productRev">Review</h3>
                                 </div>
                                 <hr style="margin-bottom: 10px;">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio,
-                                        error dolore vero temporibus
-                                        consequatur, nobis veniam odit dignissimos consectetur quae in perferendis
-                                        doloribusdebitis corporis, eaque dicta,
-                                        repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat
-                                        distinctio rem. Corrupti ratione alias odio,
-                                        error dolore temporibus consequatur, nobis veniam odit laborum dignissimos
-                                        consectetur quae vero in perferendis
-                                        provident quis.</p>
+                                <div id="productDescriptionInfRev">
+                                    <p>${ShopCardsJsonData1[indexInList].product_Footer_Data.Description}</p>
                                 </div>
                             </div>
                             <footer class="product-footer-footer">
@@ -143,10 +156,186 @@ fetch("../api/data.json")
                 `
             cardDiv.classList.add("product")
             productSidebar.appendChild(cardDiv)
+
+            weightBtn1.addEventListener("click", function () {
+                weightBtn1.style.backgroundColor = "#F53E32"
+                weightBtn2.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn2.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn1.style.color = "white"
+
+                process = ShopCardsJsonData1[indexInList].cost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${ShopCardsJsonData1[indexInList].old_Cost}`
+                weightCount = 1
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn2.addEventListener("click", function () {
+                weightBtn2.style.backgroundColor = "#F53E32"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn1.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn2.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight2
+                let OldPriceForKg = ShopCardsJsonData1[indexInList].old_Cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight2
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 2
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn3.addEventListener("click", function () {
+                weightBtn3.style.backgroundColor = "#F53E32"
+                weightBtn2.style.backgroundColor = "white"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn2.style.color = "black"
+                weightBtn1.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn3.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight3
+                let OldPriceForKg = ShopCardsJsonData1[indexInList].old_Cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight3
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 3
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn4.addEventListener("click", function () {
+                weightBtn4.style.backgroundColor = "#F53E32"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn2.style.backgroundColor = "white"
+
+                weightBtn1.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn2.style.color = "black"
+                weightBtn4.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight4
+                let OldPriceForKg = ShopCardsJsonData1[indexInList].old_Cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight4
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 4
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+
+            quantityPlus.addEventListener("click", function () {
+                count++
+                quantity.innerHTML = count
+                productIteam.innerHTML = `: ${count}`
+                if (weightCount == 1) {
+                    process += ShopCardsJsonData1[indexInList].cost
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else if (weightCount == 2) {
+                    let priceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight2
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else if (weightCount == 3) {
+                    let priceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight3
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else {
+                    let priceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight4
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+            })
+            quantityMinus.addEventListener("click", function () {
+                if (count > 1) {
+                    count--
+                    quantity.innerHTML = count
+                    productIteam.innerHTML = `: ${count}`
+                    if (weightCount == 1) {
+                        process -= ShopCardsJsonData1[indexInList].cost
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else if (weightCount == 2) {
+                        let priceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight2
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else if (weightCount == 3) {
+                        let priceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight3
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else {
+                        let priceForKg = ShopCardsJsonData1[indexInList].cost / ShopCardsJsonData1[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData1[indexInList].product_Weight.weight4
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                }
+                else {
+                    console.error("Sorry, can't go down from 1")
+                }
+            })
+
+            function footerClicks() {
+                productDescription.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Description
+                })
+                productInf.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Information
+                })
+                productRev.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Review
+                })
+            }
+            footerClicks()
         }
+        // 2
         else if (savedGlobalCartCount >= productCardsCount[1].start && savedGlobalCartCount <= productCardsCount[1].end) {
+            idDocuments()
             let indexInList = savedGlobalCartCount - productCardsCount[1].start
             let cardDiv = document.createElement('div')
+            let count = 1
+            let weightCount = 1
+            let process = ShopCardsJsonData2[indexInList].cost
             cardDiv.innerHTML = `
                 <div class="product">
                         <div class="product-top">
@@ -217,10 +406,10 @@ fetch("../api/data.json")
                                 </div>
                                 <div class="product-about-right-weight">
                                     <h3>Size/Weight :</h3>
-                                    <button id="weightBtn1">50kg</button>
-                                    <button id="weightBtn2">80kg</button>
-                                    <button id="weightBtn3">120kg</button>
-                                    <button id="weightBtn4">200kg</button>
+                                    <button id="weightBtn1">${ShopCardsJsonData2[indexInList].product_Weight.weight1}kg</button>
+                                    <button id="weightBtn2">${ShopCardsJsonData2[indexInList].product_Weight.weight2}kg</button>
+                                    <button id="weightBtn3">${ShopCardsJsonData2[indexInList].product_Weight.weight3}kg</button>
+                                    <button id="weightBtn4">${ShopCardsJsonData2[indexInList].product_Weight.weight4}kg</button>
                                 </div>
                                 <div class="product-about-right-quantity">
                                     <div class="product-about-right-quantity-adder">
@@ -278,10 +467,186 @@ fetch("../api/data.json")
                 `
             cardDiv.classList.add("product")
             productSidebar.appendChild(cardDiv)
+
+            weightBtn1.addEventListener("click", function () {
+                weightBtn1.style.backgroundColor = "#F53E32"
+                weightBtn2.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn2.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn1.style.color = "white"
+
+                process = ShopCardsJsonData2[indexInList].cost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${ShopCardsJsonData2[indexInList].old_Cost}`
+                weightCount = 1
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn2.addEventListener("click", function () {
+                weightBtn2.style.backgroundColor = "#F53E32"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn1.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn2.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight2
+                let OldPriceForKg = ShopCardsJsonData2[indexInList].old_Cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight2
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 2
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn3.addEventListener("click", function () {
+                weightBtn3.style.backgroundColor = "#F53E32"
+                weightBtn2.style.backgroundColor = "white"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn2.style.color = "black"
+                weightBtn1.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn3.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight3
+                let OldPriceForKg = ShopCardsJsonData2[indexInList].old_Cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight3
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 3
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn4.addEventListener("click", function () {
+                weightBtn4.style.backgroundColor = "#F53E32"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn2.style.backgroundColor = "white"
+
+                weightBtn1.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn2.style.color = "black"
+                weightBtn4.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight4
+                let OldPriceForKg = ShopCardsJsonData2[indexInList].old_Cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight4
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 4
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+
+            quantityPlus.addEventListener("click", function () {
+                count++
+                quantity.innerHTML = count
+                productIteam.innerHTML = `: ${count}`
+                if (weightCount == 1) {
+                    process += ShopCardsJsonData2[indexInList].cost
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else if (weightCount == 2) {
+                    let priceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight2
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else if (weightCount == 3) {
+                    let priceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight3
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else {
+                    let priceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight4
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+            })
+            quantityMinus.addEventListener("click", function () {
+                if (count > 1) {
+                    count--
+                    quantity.innerHTML = count
+                    productIteam.innerHTML = `: ${count}`
+                    if (weightCount == 1) {
+                        process -= ShopCardsJsonData2[indexInList].cost
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else if (weightCount == 2) {
+                        let priceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight2
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else if (weightCount == 3) {
+                        let priceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight3
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else {
+                        let priceForKg = ShopCardsJsonData2[indexInList].cost / ShopCardsJsonData2[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData2[indexInList].product_Weight.weight4
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                }
+                else {
+                    console.error("Sorry, can't go down from 1")
+                }
+            })
+
+            function footerClicks() {
+                productDescription.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Description
+                })
+                productInf.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Information
+                })
+                productRev.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Review
+                })
+            }
+            footerClicks()
         }
+        // 3
         else if (savedGlobalCartCount >= productCardsCount[2].start && savedGlobalCartCount <= productCardsCount[2].end) {
+            idDocuments()
             let indexInList = savedGlobalCartCount - productCardsCount[2].start
             let cardDiv = document.createElement('div')
+            let count = 1
+            let weightCount = 1
+            let process = ShopCardsJsonData3[indexInList].cost
             cardDiv.innerHTML = `
                 <div class="product">
                         <div class="product-top">
@@ -352,10 +717,10 @@ fetch("../api/data.json")
                                 </div>
                                 <div class="product-about-right-weight">
                                     <h3>Size/Weight :</h3>
-                                    <button id="weightBtn1">50kg</button>
-                                    <button id="weightBtn2">80kg</button>
-                                    <button id="weightBtn3">120kg</button>
-                                    <button id="weightBtn4">200kg</button>
+                                    <button id="weightBtn1">${ShopCardsJsonData3[indexInList].product_Weight.weight1}kg</button>
+                                    <button id="weightBtn2">${ShopCardsJsonData3[indexInList].product_Weight.weight2}kg</button>
+                                    <button id="weightBtn3">${ShopCardsJsonData3[indexInList].product_Weight.weight3}kg</button>
+                                    <button id="weightBtn4">${ShopCardsJsonData3[indexInList].product_Weight.weight4}kg</button>
                                 </div>
                                 <div class="product-about-right-quantity">
                                     <div class="product-about-right-quantity-adder">
@@ -413,11 +778,182 @@ fetch("../api/data.json")
                 `
             cardDiv.classList.add("product")
             productSidebar.appendChild(cardDiv)
+
+            weightBtn1.addEventListener("click", function () {
+                weightBtn1.style.backgroundColor = "#F53E32"
+                weightBtn2.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn2.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn1.style.color = "white"
+
+                process = ShopCardsJsonData3[indexInList].cost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${ShopCardsJsonData3[indexInList].old_Cost}`
+                weightCount = 1
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn2.addEventListener("click", function () {
+                weightBtn2.style.backgroundColor = "#F53E32"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn1.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn2.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight2
+                let OldPriceForKg = ShopCardsJsonData3[indexInList].old_Cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight2
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 2
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn3.addEventListener("click", function () {
+                weightBtn3.style.backgroundColor = "#F53E32"
+                weightBtn2.style.backgroundColor = "white"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn4.style.backgroundColor = "white"
+
+                weightBtn2.style.color = "black"
+                weightBtn1.style.color = "black"
+                weightBtn4.style.color = "black"
+                weightBtn3.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight3
+                let OldPriceForKg = ShopCardsJsonData3[indexInList].old_Cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight3
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 3
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+            weightBtn4.addEventListener("click", function () {
+                weightBtn4.style.backgroundColor = "#F53E32"
+                weightBtn1.style.backgroundColor = "white"
+                weightBtn3.style.backgroundColor = "white"
+                weightBtn2.style.backgroundColor = "white"
+
+                weightBtn1.style.color = "black"
+                weightBtn3.style.color = "black"
+                weightBtn2.style.color = "black"
+                weightBtn4.style.color = "white"
+
+                let newPriceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                let newCost = newPriceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight4
+                let OldPriceForKg = ShopCardsJsonData3[indexInList].old_Cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                let oldCost = OldPriceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight4
+
+                process = newCost
+                costTxt.innerHTML = `$${process.toFixed(2)}`
+                oldCostTxt.innerHTML = `$${oldCost.toFixed(2)}`
+                weightCount = 4
+                quantity.innerHTML = 1
+                count = 1
+                productIteam.innerHTML = `: ${count}`
+            })
+
+            quantityPlus.addEventListener("click", function () {
+                count++
+                quantity.innerHTML = count
+                productIteam.innerHTML = `: ${count}`
+                if (weightCount == 1) {
+                    process += ShopCardsJsonData3[indexInList].cost
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else if (weightCount == 2) {
+                    let priceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight2
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else if (weightCount == 3) {
+                    let priceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight3
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+                else {
+                    let priceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                    let a = priceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight4
+
+                    process += a
+                    costTxt.innerHTML = `$${process.toFixed(2)}`
+                }
+            })
+            quantityMinus.addEventListener("click", function () {
+                if (count > 1) {
+                    count--
+                    quantity.innerHTML = count
+                    productIteam.innerHTML = `: ${count}`
+                    if (weightCount == 1) {
+                        process -= ShopCardsJsonData3[indexInList].cost
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else if (weightCount == 2) {
+                        let priceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight2
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else if (weightCount == 3) {
+                        let priceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight3
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                    else {
+                        let priceForKg = ShopCardsJsonData3[indexInList].cost / ShopCardsJsonData3[indexInList].product_Weight.weight1
+                        let a = priceForKg * ShopCardsJsonData3[indexInList].product_Weight.weight4
+
+                        process -= a
+                        costTxt.innerHTML = `$${process.toFixed(2)}`
+                    }
+                }
+                else {
+                    console.error("Sorry, can't go down from 1")
+                }
+            })
+
+            function footerClicks() {
+                productDescription.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Description
+                })
+                productInf.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Information
+                })
+                productRev.addEventListener("click", function () {
+                    productDescriptionInfRev.innerHTML = ShopCardsJsonData1[indexInList].product_Footer_Data.Review
+                })
+            }
+            footerClicks()
         }
         else {
             let cardDiv = document.createElement('div')
             cardDiv.innerHTML = `
-                    <img src="../img/monkey.jpg" alt="">
+                    <h1>Sorry join to shop to have here iteam</h1>
                 `
             cardDiv.classList.add("product")
             productSidebar.appendChild(cardDiv)
@@ -595,7 +1131,3 @@ function searchInput() {
 
 }
 searchInput()
-
-function btnColorChanger() {
-    style.backgroundColor = "#F53E32"
-}
