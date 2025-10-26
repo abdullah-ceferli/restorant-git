@@ -1,4 +1,4 @@
-fetch("assets/api/data.json")
+fetch("https://raw.githubusercontent.com/abdullah-ceferli/restorant-finnal-project-api/main/data.json")
     .then(response => response.json())
     .then(data => {
         let cardsCustomerFavJsonData = Object.values(data[`cards_customer_fav`][0])

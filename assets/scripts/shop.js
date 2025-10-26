@@ -1,4 +1,4 @@
-fetch("../api/data.json")
+fetch("https://raw.githubusercontent.com/abdullah-ceferli/restorant-finnal-project-api/main/data.json")
     .then(response => response.json())
     .then(data => {
         const rightSideCardsFirstList = document.getElementsByClassName("right-side-cards-first-list")[0]

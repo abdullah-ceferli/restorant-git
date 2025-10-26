@@ -1,4 +1,4 @@
-fetch("../api/data.json")
+fetch("https://raw.githubusercontent.com/abdullah-ceferli/restorant-finnal-project-api/main/data.json")
     .then(response => response.json())
     .then(data => {
         const cartList = document.getElementsByClassName("cart-list")[0]
