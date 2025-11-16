@@ -23,7 +23,6 @@ def save_data(data):
 class DecimalEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, Decimal):
-            # Convert to string to preserve trailing zeros
             return float(obj)
         return super().default(obj)
 

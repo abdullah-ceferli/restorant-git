@@ -1,0 +1,857 @@
+{
+    "cards_customer_fav": [
+        {
+            "cards_customer_fav1": {
+                "img": "./assets/img/main Dish-cards-customer-fav.png",
+                "name": "Main Dish",
+                "item": "(86 dishes)"
+            },
+            "cards_customer_fav2": {
+                "img": "./assets/img/break Fast-cards-customer-fav.png",
+                "name": "Break Fast",
+                "item": "(12 break fast)"
+            },
+            "cards_customer_fav3": {
+                "img": "./assets/img/dessert-cards-customer-fav.png",
+                "name": "Dessert",
+                "item": "(48 dessert)"
+            },
+            "cards_customer_fav4": {
+                "img": "./assets/img/browse All-cards-customer-fav.png",
+                "name": "Browse All",
+                "item": "(255 Items)"
+            },
+            "cards_customer_fav5": {
+                "img": "./assets/img/breakfast Food-cards-customer-fav.png",
+                "name": "Breakfast Food",
+                "item": "(205 Items)"
+            }
+        }
+    ],
+    "featured_Cards": [
+        {
+            "featured_Cards1": {
+                "sale": "Save 35%",
+                "img": "./assets/img/featured-section-card-img1.png",
+                "second_Img": "../img/featured-section-card-img1.png",
+                "name": "All Natural Italian-Style Chicken Meatballs",
+                "cost": 238.85,
+                "old_cost": 245.8
+            },
+            "featured_Cards2": {
+                "sale": "Sale",
+                "img": "./assets/img/featured-section-card-img2.png",
+                "second_Img": "../img/featured-section-card-img2.png",
+                "name": "Angie’s Boomchickapop Sweet and womnies",
+                "cost": 238.85,
+                "old_cost": 245.8
+            },
+            "featured_Cards3": {
+                "sale": "Best sale",
+                "img": "./assets/img/featured-section-card-img3.png",
+                "second_Img": "../img/featured-section-card-img3.png",
+                "name": "Foster Farms Takeout Crispy Classic",
+                "cost": 238.85,
+                "old_cost": 245.8
+            }
+        }
+    ],
+    "popular_Cards": [
+        {
+            "popular_Cards1": {
+                "sale": "Save 35%",
+                "img": "./assets/img/popular-card-img1.png",
+                "second_Img": "../img/popular-card-img1.png",
+                "name": "All Natural Italian-Style Chicken Meatballs",
+                "cost": 238.85,
+                "old_cost": 245.8
+            },
+            "popular_Cards2": {
+                "sale": "Sale",
+                "img": "./assets/img/popular-card-img2.png",
+                "second_Img": "../img/popular-card-img2.png",
+                "name": "Angie’s Boomchickapop Sweet and womnies",
+                "cost": 238.85,
+                "old_cost": 245.8
+            },
+            "popular_Cards3": {
+                "sale": "Best sale",
+                "img": "./assets/img/popular-card-img3.png",
+                "second_Img": "../img/popular-card-img3.png",
+                "name": "Foster Farms Takeout Crispy Classic",
+                "cost": 238.85,
+                "old_cost": 245.8
+            }
+        }
+    ],
+    "new_Added_Cards": [
+        {
+            "new_Added_Cards1": {
+                "sale": "Save 35%",
+                "img": "./assets/img/apple-juice.png",
+                "second_Img": "../img/apple-juice.png",
+                "name": "All Natural Italian-Style Chicken Meatballs",
+                "cost": 238.85,
+                "old_cost": 245.8
+            },
+            "new_Added_Cards2": {
+                "sale": "Sale",
+                "img": "./assets/img/new-added-card-img2.png",
+                "second_Img": "../img/new-added-card-img2.png",
+                "name": "Angie’s Boomchickapop Sweet and womnies",
+                "cost": 238.85,
+                "old_cost": 245.8
+            },
+            "new_Added_Cards3": {
+                "sale": "Best sale",
+                "img": "./assets/img/lemon.png",
+                "second_Img": "../img/lemon.png",
+                "name": "Foster Farms Takeout Crispy Classic",
+                "cost": 238.85,
+                "old_cost": 245.8
+            }
+        }
+    ],
+    "special_Dishes_Cards": [
+        {
+            "special_Dishes_card1": {
+                "img": "./assets/img/special-dishes-cards-img1.png",
+                "name": "Fattoush salad",
+                "item": "Description of the item"
+            },
+            "special_Dishes_card2": {
+                "img": "./assets/img/special-dishes-cards-img2.png",
+                "name": "Vegetable salad",
+                "item": "Description of the item"
+            },
+            "special_Dishes_card3": {
+                "img": "./assets/img/special-dishes-cards-img3.png",
+                "name": "Egg vegi salad",
+                "item": "Description of the item"
+            }
+        }
+    ],
+    "deals_Day_Cards": [
+        {
+            "deals_Day_Card1": {
+                "id": "dealsDayCard1",
+                "img": "./assets/img/deals-day-cards-img1.png",
+                "second_Img": "../img/deals-day-cards-img1.png",
+                "txt": "Seeds of Change Organic Quinoa, Brown, & Red Rice",
+                "by": "NestFood",
+                "stars": "(4.0)",
+                "cost": 32.85,
+                "old_cost": 33.8
+            },
+            "deals_Day_Card2": {
+                "id": "dealsDayCard2",
+                "img": "./assets/img/deals-day-cards-img2.png",
+                "second_Img": "../img/deals-day-cards-img2.png",
+                "txt": "Perdue Simply Smart Organics Gluten Free",
+                "by": "Old El Paso",
+                "stars": "(4.0)",
+                "cost": 24.85,
+                "old_cost": 26.8
+            },
+            "deals_Day_Card3": {
+                "id": "dealsDayCard3",
+                "img": "./assets/img/deals-day-cards-img3.png",
+                "second_Img": "../img/deals-day-cards-img3.png",
+                "txt": "Signature Wood-Fired Mushroom and Caramelized",
+                "by": "Progresso",
+                "stars": "(4.0)",
+                "cost": 12.85,
+                "old_cost": 13.8
+            }
+        }
+    ],
+    "popular_Products": [
+        {
+            "popular_Products_Card1": {
+                "img": "../img/new-added-card-img2.png",
+                "name": "Best snakes with hazel nut mix pack 200gm",
+                "stars": "(4.5)",
+                "cost": "$120.25",
+                "old_Cost": "$123.25"
+            },
+            "popular_Products_Card2": {
+                "img": "../img/popular-card-img3.png",
+                "name": "Sweet snakes crunchy nut mix 250gm pack",
+                "stars": "(5.0)",
+                "cost": "$100.00",
+                "old_Cost": "$110.00"
+            },
+            "popular_Products_Card3": {
+                "img": "../img/lemon.png",
+                "name": "Best snakes with hazel nut mix pack 200gm",
+                "stars": "(4.5)",
+                "cost": "$120.25",
+                "old_Cost": "$123.25"
+            },
+            "popular_Products_Card4": {
+                "img": "../img/apple-juice.png",
+                "name": "Sweet snakes crunchy nut mix 250gm pack",
+                "stars": "(5.0)",
+                "cost": "$100.00",
+                "old_Cost": "$110.00"
+            }
+        }
+    ],
+    "all_Products_First_List": [
+        {
+            "all_Products_First_List_Card1": {
+                "img": "../img/lemon.png",
+                "star": "4.5",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst1",
+                "txt": "Vegetables",
+                "name": "Fresh organic villa farm lomon 500gm pack",
+                "cost": 120.25,
+                "old_Cost": 123.25
+            },
+            "all_Products_First_List_Card2": {
+                "img": "../img/new-added-card-img2.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst2",
+                "txt": "Snacks",
+                "name": "Best snakes with hazel nut pack 200gm",
+                "cost": 145,
+                "old_Cost": 150
+            },
+            "all_Products_First_List_Card3": {
+                "img": "../img/apple-juice.png",
+                "star": "4.5",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst3",
+                "txt": "Fruits",
+                "name": "Fresh organic apple 1kg simla marming",
+                "cost": 120.25,
+                "old_Cost": 123.25
+            },
+            "all_Products_First_List_Card4": {
+                "img": "../img/Watermelon2.png",
+                "star": "3.2",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-regular fa-star",
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst4",
+                "txt": "Fruits",
+                "name": "Organic fresh venila farm watermelon 5kg",
+                "cost": 50.30,
+                "old_Cost": 72.60
+            },
+            "all_Products_First_List_Card5": {
+                "img": "../img/popular-card-img3.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst5",
+                "txt": "Snacks",
+                "name": "Sweet crunchy nut mix 250gm pack",
+                "cost": 120.25,
+                "old_Cost": 123.25
+            },
+            "all_Products_First_List_Card6": {
+                "img": "../img/popular-card-img2.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst6",
+                "txt": "Bakery",
+                "name": "Delicious white baked fresh bread and toast",
+                "cost": 20,
+                "old_Cost": 22.10
+            },
+            "all_Products_First_List_Card7": {
+                "img": "../img/productjson7.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst7",
+                "txt": "Bakery",
+                "name": "Delicious white baked fresh bread and toast",
+                "cost": 20,
+                "old_Cost": 22.10
+            },
+            "all_Products_First_List_Card8": {
+                "img": "../img/productjson8.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst8",
+                "txt": "Bakery",
+                "name": "Delicious white baked fresh bread and toast",
+                "cost": 20,
+                "old_Cost": 22.10
+            },
+            "all_Products_First_List_Card9": {
+                "img": "../img/productjson9.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartFirst9",
+                "txt": "Bakery",
+                "name": "Delicious white baked fresh bread and toast",
+                "cost": 20,
+                "old_Cost": 22.10
+            }
+        }
+    ],
+    "all_Products_Second_List": [
+        {
+            "all_Products_Second_List_Card1": {
+                "img": "../img/apple-juice.png",
+                "star": "4.5",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",               
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartSecond1",
+                "txt": "Fruits",
+                "name": "Fresh organic apple 1kg simla marming",
+                "cost": 120.25,
+                "old_Cost": 123.25
+            },
+            "all_Products_Second_List_Card2": {
+                "img": "../img/Watermelon2.png",
+                "star": "4.5",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",               
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartSecond2",
+                "txt": "Fruits",
+                "name": "Organic fresh venila farm watermelon 5kg",
+                "cost": 50.30,
+                "old_Cost": 72.60
+            },
+            "all_Products_Second_List_Card3": {
+                "img": "../img/productjson9.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartSecond3",
+                "txt": "Bakery",
+                "name": "Delicious white baked fresh bread and toast",
+                "cost": 20,
+                "old_Cost": 22.10
+            },
+            "all_Products_Second_List_Card4": {
+                "img": "../img/new-added-card-img2.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "id": "productsCartSecond4",
+                "txt": "Snacks",
+                "name": "Best snakes with hazel nut pack 200gm",
+                "cost": 145,
+                "old_Cost": 150
+            }
+        }
+    ],
+    "all_Products_Third_List": [
+        {
+            "all_Products_Third_List_Card1": {
+                "img": "../img/apple-juice.png",
+                "star": "4.5",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",               
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartThird1",
+                "txt": "Fruits",
+                "name": "Fresh organic apple 1kg simla marming",
+                "cost": 120.25,
+                "old_Cost": 123.25
+            },
+            "all_Products_Third_List_Card2": {
+                "img": "../img/productjson9.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartThird2",
+                "txt": "Bakery",
+                "name": "Delicious white baked fresh bread and toast",
+                "cost": 20,
+                "old_Cost": 22.10
+            },
+            "all_Products_Third_List_Card3": {
+                "img": "../img/new-added-card-img2.png",
+                "star": "5.0",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartThird3",
+                "txt": "Snacks",
+                "name": "Best snakes with hazel nut pack 200gm",
+                "cost": 145,
+                "old_Cost": 150
+            },
+            "all_Products_Third_List_Card4": {
+                "img": "../img/Watermelon2.png",
+                "star": "4.5",
+                "star_Css": [
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",
+                    "fa-solid fa-star",               
+                    "fa-regular fa-star"
+                ],
+                "product_Parameters": {
+                    "brand": "ESTA BETTERU CO",
+                    "flavour": "Super Saver Pack",
+                    "diet_Type": "Vegetarian",
+                    "weight": 200,
+                    "speciality": "Gluten Free, Sugar Free",
+                    "info": "Egg Free, Allergen-Free"
+                },
+                "product_Weight": {
+                    "max": 50,
+                    "min": 200,
+                    "weight1": 50,
+                    "weight2": 80,
+                    "weight3": 120,
+                    "weight4": 200
+                },
+                "product_Footer_Data": {
+                    "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Information": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis.",
+                    "Review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in vero sapiente odio, error dolore vero temporibus consequatur, nobis veniam odit dignissimos consectetur quae in perferendis doloribusdebitis corporis, eaque dicta, repellat amet, illum adipisci vel perferendis dolor! Quis vel consequuntur repellat distinctio rem. Corrupti ratione alias odio, error dolore temporibus consequatur, nobis veniam odit laborum dignissimos consectetur quae vero in perferendis provident quis."
+                },
+                "id": "productsCartThird4",
+                "txt": "Fruits",
+                "name": "Organic fresh venila farm watermelon 5kg",
+                "cost": 50.30,
+                "old_Cost": 72.60
+            }
+        }
+    ],
+    "count_All_Products": [
+        {
+            "first": {
+                "start": 0,
+                "end": 8
+            },
+            "second": {
+                "start": 9,
+                "end": 12
+            },
+            "third": {
+                "start": 13,
+                "end": 16
+            }
+        }
+    ]
+}
